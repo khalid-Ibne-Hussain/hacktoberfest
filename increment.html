@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Increment App</title>
+</head>
+<body>
+  <h1>Increment App</h1>
+  <p>Count: <span id="count">0</span></p>
+  <button id="incrementButton">Increment</button>
+
+  <script>
+    // Get references to the HTML elements
+    const countElement = document.getElementById("count");
+    const incrementButton = document.getElementById("incrementButton");
+
+    let count = 0;
+
+    // Function to update the count and display it
+    function updateCount() {
+      count++;
+      countElement.textContent = count;
+    }
+
+    // Add a click event listener to the button
+    incrementButton.addEventListener("click", updateCount);
+  </script>
+</body>
+</html>
